@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Top 10 PS4 & PC Games | Personal Gaming Hall of Fame</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- BACKGROUND CYBER GRID OVERLAY -->
+  <div class="cyber-bg-overlay" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="cyber-icon">⚡</span>
+        <span class="logo-text">GAME<span class="highlight">VAULT</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#games" class="nav-link">Top 10 Games</a>
+        <a href="#tech" class="nav-link">Tech Stack</a>
+        <a href="https://github.com/joemardacles112392-cmd" target="_blank" rel="noopener noreferrer" class="btn btn-nav">GitHub Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="cyber-badge">
+        <span class="pulse-dot"></span> PS4 & PC Gaming Hall of Fame
+      </div>
+      <h1 class="hero-title">MY TOP 10 <span class="neon-text">GREATEST GAMES</span> OF ALL TIME</h1>
+      <p class="hero-desc">
+        Koleksyon ng sampung pinakamagaganda at hindi malilimutang laro sa PlayStation 4 at PC na humubog sa aking pagkahilig sa gaming, storytelling, at computer technology.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">10</span>
+          <span class="stat-label">Epic Titles</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">PS4 + PC</span>
+          <span class="stat-label">Platforms</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">100+</span>
+          <span class="stat-label">Hours of Adventure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES SECTION -->
+  <section id="games" class="section">
+    <div class="container">
+      
+      <!-- CONTROLS: SEARCH & PLATFORM FILTERS -->
+      <div class="filter-wrapper">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="gameSearch" placeholder="Hanapin ang laro (hal. Uncharted, Witcher, Dota)..." />
+        </div>
+
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-btn active" data-platform="all">Lahat ng Laro (10)</button>
+          <button class="filter-btn" data-platform="ps4">PlayStation 4</button>
+          <button class="filter-btn" data-platform="pc">PC / Steam</button>
+        </div>
+      </div>
+
+      <!-- TOP 10 GAMES GRID -->
+      <div class="games-grid" id="gamesContainer">
+
+        <!-- GAME #1: UNCHARTED 4 -->
+        <article class="game-card" data-platform="ps4 pc" data-title="uncharted 4 a thiefs end">
+          <div class="rank-badge rank-gold">#1</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=700&auto=format&fit=crop" 
+              alt="Uncharted 4: A Thief's End Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=UNCHARTED+4'" 
+            />
+            <div class="cover-tag">TOP RATED</div>
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Action-Adventure</span>
+            </div>
+            <h2 class="game-name">1. Uncharted 4: A Thief's End</h2>
+            <p class="game-story">
+              Ang huling kabanata sa kwento ni Nathan Drake bilang isang treasure hunter kung saan muling nagpakita ang kanyang kapatid na si Sam. Sama-sama nilang hinanap ang maalamat na nawawalang kayamanan ng piratang si Henry Avery sa isla ng Libertalia. Puno ito ng makapigil-hiningang action scenes, grappling hook combat, at emosyonal na kwento tungkol sa pamilya at sakripisyo. Para sa akin, ito ang isa sa pinakamagagandang visual at cinematic games na nalaro ko sa PS4.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 10/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #2: UNCHARTED TRILOGY -->
+        <article class="game-card" data-platform="ps4" data-title="uncharted the nathan drake collection trilogy">
+          <div class="rank-badge rank-silver">#2</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=700&auto=format&fit=crop" 
+              alt="Uncharted: The Nathan Drake Collection Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=UNCHARTED+TRILOGY'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4</span>
+              <span class="genre-tag">Classic Trilogy</span>
+            </div>
+            <h2 class="game-name">2. Uncharted: The Nathan Drake Collection</h2>
+            <p class="game-story">
+              Koleksyon ng unang tatlong classic na laro ni Nathan Drake: Drake's Fortune, Among Thieves, at Drake's Deception. Dito ko nasubaybayan ang kanyang simula mula sa El Dorado hanggang sa mahiwagang lungsod ng Shambhala at Atlantis of the Sands. Ang mga puzzle at climbing mechanics ay napakagandang balikan dahil sa pinahusay na 60 FPS graphics sa PS4. Isa itong hindi malilimutang adventure na nagpatunay kung gaano kagaling ang Naughty Dog sa paggawa ng kwento.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.8/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #3: UNCHARTED LEGACY OF THIEVES -->
+        <article class="game-card" data-platform="ps4 pc" data-title="uncharted legacy of thieves collection">
+          <div class="rank-badge rank-bronze">#3</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?q=80&w=700&auto=format&fit=crop" 
+              alt="Uncharted: Legacy of Thieves Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=UNCHARTED+LEGACY'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Remastered Edition</span>
+            </div>
+            <h2 class="game-name">3. Uncharted: Legacy of Thieves</h2>
+            <p class="game-story">
+              Remastered collection na kinabibilangan ng Uncharted 4 at The Lost Legacy kung saan bida naman sina Chloe Frazer at Nadine Ross. Mas naging fluid at makapangyarihan ang visual fidelity sa 4K resolution at napakabilis na loading times. Ang paglalakbay nina Chloe sa Western Ghats ng India upang hanapin ang Tusk of Ganesh ay nagbigay ng panibagong lakas at dynamic combat. Karapat-dapat itong laruin lalo na kung nais mong maranasan ang pinakamatinding graphics sa PC at modern console.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.7/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #4: GOD OF WAR V (RAGNAROK) -->
+        <article class="game-card" data-platform="ps4 pc" data-title="god of war v ragnarok">
+          <div class="rank-badge">#4</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=700&auto=format&fit=crop" 
+              alt="God of War V Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=GOD+OF+WAR+V'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Mythology Action</span>
+            </div>
+            <h2 class="game-name">4. God of War V (Ragnarök)</h2>
+            <p class="game-story">
+              Ipinagpapatuloy nito ang epikong kwento nina Kratos at ng kanyang binatang anak na si Atreus sa gitna ng siyam na kaharian ng Norse Mythology. Hinaharap nila ang propesiya ng Ragnarök at ang galit ng mga diyos ng Asgard tulad nina Thor at Odin. Napakalalim ng labanan gamit ang Leviathan Axe, Blades of Chaos, at ang bagong Draupnir Spear. Bukod sa brutal na combat, ang relasyon ng mag-amang Kratos at Atreus ang tunay na nagpapaiyak at nagbibigay buhay sa obra maestrang ito.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.9/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #5: HORIZON ZERO DAWN -->
+        <article class="game-card" data-platform="ps4 pc" data-title="horizon zero dawn">
+          <div class="rank-badge">#5</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=700&auto=format&fit=crop" 
+              alt="Horizon Zero Dawn Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=HORIZON+ZERO+DAWN'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Sci-Fi RPG</span>
+            </div>
+            <h2 class="game-name">5. Horizon Zero Dawn</h2>
+            <p class="game-story">
+              Isang kahanga-hangang open-world RPG kung saan kontrolado mo si Aloy, isang outkast hunter sa isang post-apocalyptic na mundo na pinamumunuan ng mga higanteng robotic machines. Sa pamamagitan ng kanyang bow, traps, at spear, unti-unti niyang tinuklas ang sikreto kung paano nawala ang lumang sibilisasyon ng tao. Napakaganda ng mga biome mula sa mayelong kabundukan hanggang sa masukal na kagubatan. Bawat laban laban sa Thunderjaw o Stormbird ay nangangailangan ng tamang taktika at mabilis na reflexes.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.6/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #6: MAFIA DEFINITIVE EDITION -->
+        <article class="game-card" data-platform="ps4 pc" data-title="mafia definitive edition">
+          <div class="rank-badge">#6</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=700&auto=format&fit=crop" 
+              alt="Mafia Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=MAFIA'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Crime Drama</span>
+            </div>
+            <h2 class="game-name">6. Mafia: Definitive Edition</h2>
+            <p class="game-story">
+              Remake ng maalamat na 1930s crime drama sa lungsod ng Lost Heaven kung saan sinusundan natin ang buhay ng taxi driver na naging gangster na si Tommy Angelo. Matapos ang isang hindi inaasahang insidente, napasama siya sa makapangyarihang Salieri crime family. Puno ito ng matitinding car chases noong era ng vintage vehicles, barilan gamit ang classic Tommy Gun, at kwento ng katapatan at pagtataksil. Para itong panonood ng isang de-kalibreng pelikula tulad ng The Godfather.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.4/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #7: DOTA 2 -->
+        <article class="game-card" data-platform="pc" data-title="dota 2 valve steam">
+          <div class="rank-badge">#7</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=700&auto=format&fit=crop" 
+              alt="Dota 2 Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=DOTA+2'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag pc-tag">PC (Steam)</span>
+              <span class="genre-tag">Esports / MOBA</span>
+            </div>
+            <h2 class="game-name">7. Dota 2</h2>
+            <p class="game-story">
+              Ang paborito kong competitive multiplayer online battle arena (MOBA) na nilalaro sa PC gamit ang Steam. Bawat laro ay labanan ng dalawang koponan na may limang manlalaro kung saan layuning sirain ang Ancient ng kalaban. Nangangailangan ito ng matinding teamwork, mabilis na desisyon, tamang pagbili ng items, at mastery sa mahigit 120 natatanging bayani. Kahit gaano katagal ko na itong nilaro, bawat match ay laging may bagong hamon at hindi matatawarang saya kasama ang mga kaibigan.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.8/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #8: GRAND THEFT AUTO V -->
+        <article class="game-card" data-platform="ps4 pc" data-title="grand theft auto v gta 5">
+          <div class="rank-badge">#8</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1612287232258-c84024479e00?q=80&w=700&auto=format&fit=crop" 
+              alt="Grand Theft Auto V Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=GTA+V'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Open World</span>
+            </div>
+            <h2 class="game-name">8. Grand Theft Auto V (GTA V)</h2>
+            <p class="game-story">
+              Isang walang kapantay na open-world action-adventure game na nakasentro sa tatlong magkakaibang kriminal: sina Michael, Franklin, at Trevor sa lungsod ng Los Santos. Pwede kang malayang magpalipat-lipat sa tatlong bida habang nagpaplano at nagsasagawa ng mga komplikadong heists at misyon. Napakalawak ng mapa na puno ng sasakyan, eroplano, baril, at walang katapusang kalayaan sa paglalaro. Isa ito sa pinakamatagumpay at pinaka-iconic na laro sa buong kasaysayan ng gaming.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.8/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #9: THE WITCHER 3: WILD HUNT -->
+        <article class="game-card" data-platform="ps4 pc" data-title="the witcher 3 wild hunt geralt">
+          <div class="rank-badge">#9</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=700&auto=format&fit=crop" 
+              alt="The Witcher 3 Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=THE+WITCHER+3'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Dark Fantasy RPG</span>
+            </div>
+            <h2 class="game-name">9. The Witcher 3: Wild Hunt</h2>
+            <p class="game-story">
+              Ginagampanan mo rito ang papel ni Geralt of Rivia, isang propesyonal na halimaw hunter o Witcher, habang hinahanap ang kanyang ampon na anak na si Ciri. Ang mundo ng Continent ay puno ng madidilim na mahika, mga nakakatakot na nilalang, at mga desisyong moral na walang tiyak na tama o mali. Napakahusay ng pagsulat ng bawat side quest, pati na ang minigame na Gwent na labis na nakakaadik. Para sa akin, ito ang pamantayan ng pinakamataas na uri ng role-playing game sa mundo.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.9/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- GAME #10: NBA 2K -->
+        <article class="game-card" data-platform="ps4 pc" data-title="nba 2k basketball sports">
+          <div class="rank-badge">#10</div>
+          <div class="game-cover-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=700&auto=format&fit=crop" 
+              alt="NBA 2K Cover" 
+              class="game-cover" 
+              onerror="this.src='https://placehold.co/600x800/0f172a/38bdf8?text=NBA+2K'" 
+            />
+          </div>
+          <div class="game-info">
+            <div class="meta-row">
+              <span class="platform-tag ps4-tag">PS4 & PC</span>
+              <span class="genre-tag">Sports Simulation</span>
+            </div>
+            <h2 class="game-name">10. NBA 2K</h2>
+            <p class="game-story">
+              Ang pinakapopular na basketball simulation game kung saan mararanasan mo ang bilis at intensity ng tunay na NBA hardcourt. Paborito kong buuin ang sarili kong manlalaro sa MyCAREER mode mula rookie hanggang maging All-Star champion, o kaya'y maglaro ng mabilisang laban kasama ang pamilya at barkada. Makatotohanan ang bawat dunks, three-point shooting, at depensa dahil sa updated rosters at player animations. Ito ang laging nagpapasaya sa akin kapag nais kong mag-relax at maglaro ng sports pagkatapos mag-aral.
+            </p>
+            <div class="card-footer">
+              <span class="rating-badge">★ 9.2/10 Score</span>
+              <button class="like-btn" onclick="toggleFavorite(this)">🤍 <span class="like-count">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK INFO FOOTER -->
+  <section id="tech" class="tech-section">
+    <div class="container">
+      <div class="tech-box">
+        <h3 class="tech-title">⚡ Binuo Gamit ang Purong HTML5, CSS3, at JavaScript</h3>
+        <p class="tech-desc">
+          Ang simpleng website na ito ay ginawa para sa aking personal coding portfolio. Naka-host sa GitHub at madaling i-deploy sa GitHub Pages o Netlify gamit ang VS Code Studio.
+        </p>
+        <div class="tech-tags">
+          <span class="tag">HTML5 Semantic</span>
+          <span class="tag">CSS3 Cyber Grid</span>
+          <span class="tag">Vanilla JavaScript ES6</span>
+          <span class="tag">GitHub Pages Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Joemar D. Dacles · Top 10 Games Portfolio Project</p>
+      <a href="#games" class="btn-top" id="backToTop">↑ Bumalik sa Taas</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
